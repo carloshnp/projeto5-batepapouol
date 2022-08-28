@@ -19,10 +19,24 @@ header {
     width: 100%;
     background-color: white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 22px;
+}
+
+header ion-icon {
+    height: 45px;
+    width: 45px;
 }
 
 .content {
@@ -39,6 +53,7 @@ header {
     display: flex;
     align-items: center;
     overflow-wrap: break-word;
+    line-height: 18px;
 }
 
 .message span {
@@ -75,8 +90,29 @@ footer {
     width: 100%;
     background-color: white;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 1;
+}
+
+.comments {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 18px;
+}
+
+.comments input, input:focus {
+    color: #000000;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+.comments ion-icon {
+    height: 26px;
+    width: 26px;
 }
