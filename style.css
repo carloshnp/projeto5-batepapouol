@@ -1,6 +1,11 @@
 body {
-    background-color: darkgray;
+    background-color: #F3F3F3;
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+main {
+    height: 100%;
 }
 
 
@@ -13,6 +18,7 @@ header {
     height: 80px;
     width: 100%;
     background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
     position: fixed;
     top: 0;
     left: 0;
@@ -20,7 +26,7 @@ header {
 }
 
 .content {
-    margin: 106px 0px;
+    margin: 106px 0px 90px;
     width: 100%;
     z-index: 0;
 }
@@ -29,16 +35,46 @@ header {
     background-color: #FFFFFF;
     min-height: 40px;
     width: 100%;
-    padding: 0 8px;
     margin: 0px 0px 4px 0px;
     display: flex;
     align-items: center;
+    overflow-wrap: break-word;
+}
+
+.message span {
+    margin-right: 3px;
+}
+
+.message p {
+    width: calc(100% - 16px);
+    padding: 0px 8px;
+}
+
+.status {
+    background-color: #DCDCDC;
+}
+
+.private_message {
+    background-color: #FFDEDE;
+}
+
+.time {
+    color: #AAAAAA;
+}
+
+.from, .to {
+    font-weight: 700;
+}
+
+.text {
+    overflow-wrap: break-word;
 }
 
 footer {
     height: 80px;
     width: 100%;
     background-color: white;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
     position: fixed;
     bottom: 0;
     left: 0;
